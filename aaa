@@ -1,0 +1,25 @@
+
+Na entrada deverão constar as informações da proposta do exercício:
+
+função
+
+número de casas decimais
+
+intervalo de integração: início e fim
+
+número de trapézios
+
+altura de cada trapézio (h ou passo)
+
+Na resolução devem constar a tabela com o intervalo, 
+passo a passo, e seus respectivos valores da função
+
+Deve constar a delimitação do Erro de arredondamento, 
+com número de trapézios, delimitação do erro em cada trapézio e o passo (h), 
+com o resultado (por exemplo: 10(0,000005)0,2 com dez trapézios e passo 0,2)
+
+Na saída, a Soma das áreas dos trapézios e os dois tipos de intervalos
+
+Se quiser representar de forma gráfica para complementar, 
+será muito bom, mas não é obrigatório
+
