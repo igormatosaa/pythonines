@@ -26,9 +26,12 @@ def formatar(resultado, casas_decimais):
 grafico.style.use(['dark_background'])
 
 N = 6
-x = calculo.linspace(2,5,N,endpoint=False)
+fim = 5
+inicio = 2
 
-x = calculo.append(x,5)
+x = calculo.linspace(inicio,fim,N,endpoint=False)
+
+x = calculo.append(x,fim)
 
 y = calculo.array([0,0])
 
@@ -44,7 +47,14 @@ f_x = eval(expressao)
 
 grafico.plot(x,f_x,'x-')
 
-erro_arredondamento = (5*(10**-)
+casas_decimais = 3
+passo = (fim-inicio)/N
+dez_elevado = 10**(-(casas_decimais+1))
+cinco_virgulado = 5 * dez_elevado
+
+erro_arredondamento = N*cinco_virgulado*passo
+
+print()
 
 y[0]=x[0]
 
@@ -52,12 +62,12 @@ total_valor = calculo.array([])
 
 valor = f_x
 print(valor)
+erro_arredondamento = formatar(erro_arredondamento,casas_decimais)
+print(f"a a {erro_arredondamento}")
 
 total = calculo.trapz(f_x,x)
 
 total = calculo.round(total, 5)
-
-casas_decimais = 5
 
 total = formatar(total, casas_decimais)
 
